@@ -19,6 +19,10 @@
 		78D055AA1910EF4D0003AEAF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78D055921910EF4D0003AEAF /* UIKit.framework */; };
 		78D055B21910EF4D0003AEAF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 78D055B01910EF4D0003AEAF /* InfoPlist.strings */; };
 		78D055B41910EF4D0003AEAF /* testuiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D055B31910EF4D0003AEAF /* testuiTests.m */; };
+		78D055C91910F03D0003AEAF /* XXviewtest.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D055C71910F03D0003AEAF /* XXviewtest.m */; };
+		78D055CA1910F03D0003AEAF /* XXviewtest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78D055C81910F03D0003AEAF /* XXviewtest.xib */; };
+		78D055CE191110070003AEAF /* XXview2.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D055CC191110070003AEAF /* XXview2.m */; };
+		78D055CF191110070003AEAF /* XXview2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78D055CD191110070003AEAF /* XXview2.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,12 @@
 		78D055AF1910EF4D0003AEAF /* testuiTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "testuiTests-Info.plist"; sourceTree = "<group>"; };
 		78D055B11910EF4D0003AEAF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		78D055B31910EF4D0003AEAF /* testuiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testuiTests.m; sourceTree = "<group>"; };
+		78D055C61910F03D0003AEAF /* XXviewtest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXviewtest.h; sourceTree = "<group>"; };
+		78D055C71910F03D0003AEAF /* XXviewtest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXviewtest.m; sourceTree = "<group>"; };
+		78D055C81910F03D0003AEAF /* XXviewtest.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XXviewtest.xib; sourceTree = "<group>"; };
+		78D055CB191110070003AEAF /* XXview2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XXview2.h; path = ../XXview2.h; sourceTree = "<group>"; };
+		78D055CC191110070003AEAF /* XXview2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XXview2.m; path = ../XXview2.m; sourceTree = "<group>"; };
+		78D055CD191110070003AEAF /* XXview2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = XXview2.xib; path = ../XXview2.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +87,7 @@
 		78D055821910EF4D0003AEAF = {
 			isa = PBXGroup;
 			children = (
+				78D055BD1910EFA60003AEAF /* uiview */,
 				78D055941910EF4D0003AEAF /* testui */,
 				78D055AD1910EF4D0003AEAF /* testuiTests */,
 				78D0558D1910EF4D0003AEAF /* Frameworks */,
@@ -142,6 +153,19 @@
 				78D055B01910EF4D0003AEAF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		78D055BD1910EFA60003AEAF /* uiview */ = {
+			isa = PBXGroup;
+			children = (
+				78D055CB191110070003AEAF /* XXview2.h */,
+				78D055CC191110070003AEAF /* XXview2.m */,
+				78D055CD191110070003AEAF /* XXview2.xib */,
+				78D055C61910F03D0003AEAF /* XXviewtest.h */,
+				78D055C71910F03D0003AEAF /* XXviewtest.m */,
+				78D055C81910F03D0003AEAF /* XXviewtest.xib */,
+			);
+			path = uiview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +245,8 @@
 			files = (
 				78D055991910EF4D0003AEAF /* InfoPlist.strings in Resources */,
 				78D055A11910EF4D0003AEAF /* Images.xcassets in Resources */,
+				78D055CA1910F03D0003AEAF /* XXviewtest.xib in Resources */,
+				78D055CF191110070003AEAF /* XXview2.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78D055C91910F03D0003AEAF /* XXviewtest.m in Sources */,
 				78D0559F1910EF4D0003AEAF /* AppDelegate.m in Sources */,
 				78D0559B1910EF4D0003AEAF /* main.m in Sources */,
+				78D055CE191110070003AEAF /* XXview2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +387,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "testui/testui-Prefix.pch";
 				INFOPLIST_FILE = "testui/testui-Info.plist";
@@ -372,6 +401,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "testui/testui-Prefix.pch";
 				INFOPLIST_FILE = "testui/testui-Info.plist";
@@ -441,6 +471,7 @@
 				78D055B91910EF4D0003AEAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		78D055BA1910EF4D0003AEAF /* Build configuration list for PBXNativeTarget "testuiTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +480,7 @@
 				78D055BC1910EF4D0003AEAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

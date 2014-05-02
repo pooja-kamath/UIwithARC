@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  uiviewsViewController.h
 //  testui
 //
 //  Created by Pooja Kamath on 30/04/14.
@@ -7,9 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "XXviewtest.h"
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
+@interface uiviewsViewController : UIViewController
 
 @end
